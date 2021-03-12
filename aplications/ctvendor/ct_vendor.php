@@ -12,95 +12,7 @@ The above copyright notice and this permission notice shall be included in all c
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Material Dashboard by Creative Tim
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../assets/demo/demo.css" rel="stylesheet" />
-</head>
-
-<body class="">
-  <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
-      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
-        </a></div>
-      <div class="sidebar-wrapper">
-        <ul class="nav">
-          <li class="nav-item  ">
-            <a class="nav-link" href="./dashboard.html">
-              <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li class="nav-item active ">
-            <a class="nav-link" href="./user.html">
-              <i class="material-icons">person</i>
-              <p>User Profile</p>
-            </a>
-          </li>
-          
-          <li class="nav-item ">
-            <a class="nav-link" href="./tables.html">
-              <i class="material-icons">content_paste</i>
-              <p>Table List</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
-              <i class="material-icons">library_books</i>
-              <p>Typography</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./icons.html">
-              <i class="material-icons">bubble_chart</i>
-              <p>Icons</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./map.html">
-              <i class="material-icons">location_ons</i>
-              <p>Maps</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./notifications.html">
-              <i class="material-icons">notifications</i>
-              <p>Notifications</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./rtl.html">
-              <i class="material-icons">language</i>
-              <p>RTL Support</p>
-            </a>
-          </li>
-          <li class="nav-item active-pro ">
-            <a class="nav-link" href="./upgrade.html">
-              <i class="material-icons">unarchive</i>
-              <p>Upgrade to PRO</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<?php include("../sidebar/sidebar.php"); ?>
     <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
@@ -171,11 +83,11 @@ The above copyright notice and this permission notice shall be included in all c
       <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-          <div class="row ml-3">
-            <!-- INI TOMBOL -->
-            <button type="submit" class="mr-2 btn btn-primary pull-right">Data Diri</button> 
-            <button type="submit" class="mr-2 btn btn-primary pull-right">Pendidikan</button> 
-            <button type="submit" class="mr-2 btn btn-primary pull-right">Pengalaman Kerja</button> 
+          <div class="row ml-3">       
+            <a href="aplications/ctvendor/ct_vendor.php" class="r-2 btn btn-primary pull-right button">Data Diri</a>
+            <a href="aplications/ctvendor/pendidikan.php" class="r-2 btn btn-primary pull-right button">Riwayat Pendidikan</a>
+            <a href="aplications/ctvendor/keluarga.php" class="r-2 btn btn-primary pull-right button">Keterangan Keluarga</a>
+            <a href="aplications/ctvendor/pekerjaan.php" class="r-2 btn btn-primary pull-right button">Riwayat Pekerjaan</a>
           </div>
           <div class="row">
             <div class="col-md-8">
@@ -212,14 +124,14 @@ The above copyright notice and this permission notice shall be included in all c
                         <input type="date" id="birthday" class="form-control" name="birthday">
                       </div>
                     </div>  
-                  <div class="col-md-12">
+                  <div class="col-md-6">
                     <div class="form-group">
                       <label class="bmd-label-floating">Agama</label>
                       <input type="text" class="form-control">
                     </div>
                   </div>
                
-                <div class="col-md-12">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label class="bmd-label-floating">Kebangsaan / Keturunan</label>
                     <input type="text" class="form-control">
@@ -234,63 +146,60 @@ The above copyright notice and this permission notice shall be included in all c
                     <label for="female">Perempuan </label>
                   </div>
                 </div>      
-                <div class="col-md-12">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label class="bmd-label-floating">Alamat Sesuai KTP</label>
                     <input type="text" class="form-control">
                   </div>
                 </div>
-              </div>
-                    <div class="row">
-                      <div class="col-md-12">
+                  
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Alamat di Bandung</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Nama Perusahaan</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
                     
-                      <div class="col-md-12">
+                      <div class="col-md-3">
                         <div class="form-group">
                           <label class="bmd-label-floating">Nomor KTP / SIM</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                       
-                      <div class="col-md-12">
+                      <div class="col-md-3">
                         <div class="form-group">
                           <label class="bmd-label-floating">Golongan Darah</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
-                    
-                    <div class="col-md-12">
+                      
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Ciri - ciri Khusus</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    <div class="col-md-3">
                       <div class="form-group">
                         <label class="bmd-label-floating">Nomor Telepon / HP</label>
                         <input type="text" class="form-control">
                       </div>
                     </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Ciri - ciri Khusus</label>
-                        <input type="text" class="form-control">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Nama Perusahaan</label>
+                          <input type="text" class="form-control">
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                       <div class="form-group">
                         <label class="bmd-label-floating">Organisasi yang pernah diikuti</label>
                         <input type="text" class="form-control">
                       </div>
                     </div>
                   </div>
-                    <button type="submit" class="btn btn-primary pull-right">Submit</button>
+                    <button type="submit" class="btn btn-primary pull-right">Simpan</button>
                     <div class="clearfix"></div>
                   </form>
                 </div>
@@ -317,127 +226,7 @@ The above copyright notice and this permission notice shall be included in all c
           </div>
         </div>
       </div>
-      <div class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="card">
-                <div class="card-header card-header-primary">
-                  <h4 class="card-title">DATA PRIBADI</h4>
-                  <p class="card-category">SILAHKAN ISI DATA PERSONAL ANDA</p>
-                </div>
-                <div class="card-body">
-                  <form>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Nama Lengkap</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                   
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Nama Panggilan</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>  
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Tempat Lahir</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="birthday">Tanggal Lahir</label>
-                        <input type="date" id="birthday" class="form-control" name="birthday">
-                      </div>
-                    </div>  
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <label class="bmd-label-floating">Agama</label>
-                      <input type="text" class="form-control">
-                    </div>
-                  </div>
-               
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label class="bmd-label-floating">Kebangsaan / Keturunan</label>
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label class="bmd-label-floating">Jenis Kelamin</label><br>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Laki-Laki </label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Perempuan </label>
-                  </div>
-                </div>      
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label class="bmd-label-floating">Alamat Sesuai KTP</label>
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-              </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Alamat di Bandung</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Nama Perusahaan</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Nomor KTP / SIM</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Golongan Darah</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Nomor Telepon / HP</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Ciri - ciri Khusus</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Organisasi yang pernah diikuti</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                    <button type="submit" class="btn btn-primary pull-right">Submit</button>
-                    <div class="clearfix"></div>
-                  </form>
-                </div>
-              </div>
-            </div>
+      
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
